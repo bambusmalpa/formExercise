@@ -1,0 +1,100 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family: 'Fira Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  background-color: #171717;
+  color:#ffffff;
+  font-size: 16px;
+}
+
+
+.header{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 15vh;
+  >.header__logo{
+    font-size: 21px
+  }
+
+  >.header__menu{
+    display: flex;
+    list-style: none;
+    width: 30%;
+    font-size: 16px;
+    >.menu__element{
+      margin-left:50px;
+    >.menu__link{
+      color:#ffffff;
+      text-decoration: none;
+    }}
+    
+
+  }
+
+}
+
+
+.contentTail{
+  position: absolute;
+  top:50%;
+  left:50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%,-50%);
+  width: 459px;
+  height: 491px;
+  border:2px solid #ffffff;
+  text-align: center;
+  &__title{
+    font-size: 21px;
+  }
+  &__paragraph{
+    font-size: 14px;
+    padding: 38px 55px;
+    font-weight: 100;
+  }
+  &__form{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    padding: 38px 30px;
+    >.form__input{
+      font-size: 16px;
+      background-color: transparent;
+      border:none;
+      border-bottom: 1px solid #ffffff;
+      width: 100%;
+      margin:10px 0;
+    }
+    >.form__button{
+      display: block;
+      font-size: 14px;
+      padding: 10px 19px;
+      background-color: #ffffff;
+      font-weight: 700;
+      margin-top:50px;
+      border:none;
+    }
+    >.form__checkGroup{
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      width: 100%;
+      justify-content: space-around;
+      >.checkGroup__label{
+        font-size: 10px;
+      }
+    }
+  }
+}
