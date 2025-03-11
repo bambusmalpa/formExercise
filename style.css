@@ -1,5 +1,5 @@
 h1{
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  background-image: linear-gradient(to left, violet, violet, indigo, blue, green, yellow, orange,red, red);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
