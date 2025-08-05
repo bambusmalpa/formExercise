@@ -1,50 +1,81 @@
-<!DOCTYPE html>
+<html lang="pl"><head>
 
-<html lang="pl">
-
-<head>
+ 
 
   <title>Ogarniaj CATa z Kicia</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
+ 
+
 <body>
+
 <div class="container">
 
-<h1>Ogarniaj CATa z Kicią</h1>
+ 
+
+<h1>Ogarniaj CATa z Kicia</h1>
+
+                <label for="sapName">Ile czasu w SAP? :</label>
+
+                <input value="460" type="number" max="460" min="0" step="1" id="fromSap" name="sap">
+
+                <div>Pozostaly czas:</div>
+
+    <h1 id="sapResult"></h1>
 
  
 
-                <label for="fname">Ile czasu w SAP? :</label>
+                <label for="minutesName">Minut:</label>
 
-                <input value="460"  type="number" max="460" min="0" step="1" id="fromSap" name="sap">
-<div>Pozostały czas:</div>
-                <h1 id="result"></h1>
+                <input value="0" type="number" max="465" min="0" step="1" id="minutesToHours" name="minutes">
 
- 
+                <div>to % godziny:</div>
+
+                <h1 id="minutesResult"></h1>
 
 </div>
 
-</body>
+ 
+
+ 
+
+ 
 
                 <script>
 
-                let result=document.getElementById("result")
+ 
 
-                let time=document.getElementById("fromSap")
+                let sapResult=document.getElementById("sapResult")
 
-                               time.addEventListener("input",function (e){
+                                                               let FromSap=document.getElementById("fromSap")
 
-                                                               let sapResult=((460-parseInt(time.value))/60).toFixed(2)
+                                                               fromSap.addEventListener("input",function (e){
 
-                                                               result.innerHTML=sapResult })
+                                                                               let x=((460-parseInt(FromSap.value))/60).toFixed(2)
 
-                              
+                                                                               sapResult.innerHTML=x })
 
-                              
+                                                              
 
-                </script>
+                                                               let minutesResult=document.getElementById("minutesResult")
 
-</html>
+                                                               let minutesToHours=document.getElementById("minutesToHours")
+
+                                                               minutesToHours.addEventListener("input",function (e){
+
+                                                                               let x=((minutesToHours.value)/60).toFixed(2)
+
+                                                                               minutesResult.innerHTML=x })
+
+                             
 
  
+
+                             
+
+ 
+
+                </script>
